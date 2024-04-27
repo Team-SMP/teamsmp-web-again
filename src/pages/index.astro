@@ -1,5 +1,5 @@
 ---
-
+import NavBar from "../components/NavBar.astro"
 ---
 
 <html lang="en">
@@ -8,9 +8,53 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<link href="https://fonts.googleapis.com/css?family=Inter:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+		<title>Team SMP &bull; Home</title>
 	</head>
+	<style lang="styl">
+		body
+			background #000c0a
+			color #fff
+			font-family Inter, Ubuntu, Arial, sans-serif
+		h1
+			font-family "Space Grotesk", Inter, Ubuntu, Arial, sans-serif
+			font-size 8rem
+		#MAIN
+			margin 1rem 10rem 0px 10rem
+		p
+			font-size 1.25rem
+		.titleBlock
+			text-align center
+			padding-top 6rem
+			h1
+				font-weight black
+				line-height 0
+		p#tagline
+			font-size 2rem
+			line-height 0
+			text-align center
+			margin-bottom 8rem
+		.titleBlock::before
+			position: absolute;
+			z-index: -1;
+			content: "";
+			top: 0%;
+			bottom: 10%;
+			width: 150%;
+			left: -25%;
+			background: linear-gradient(83.21deg,#1a931e 0%,#1f61ad 100%);
+			-webkit-mask-image: radial-gradient(rgba(0,0,0,.45),transparent 70%);
+			mask-image: radial-gradient(rgba(0,0,0,.45),transparent 70%);
+
+	</style>
 	<body>
-		<h1>Astro</h1>
+		<div id="MAIN">
+			<NavBar />
+			<div class="titleBlock">
+				<h1>Team SMP</h1>
+			</div>
+			<p id="tagline">Unite, Survive, Thrive!</p>
+			<p>The Team SMP is a survival Minecraft server run by XxDreamXxXx and JunglTemple</p>
+		</div>
 	</body>
 </html>
