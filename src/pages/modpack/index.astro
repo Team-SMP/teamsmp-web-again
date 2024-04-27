@@ -1,35 +1,19 @@
 ---
-import NavBar from "../../components/NavBar.astro";
-// import ServerStatus from "../components/temp.vue"
-import '../../styles/general.styl'
+import Main from "../../layouts/Main.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<link href="https://fonts.googleapis.com/css?family=Inter:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-		<title>Team SMP &bull; Modpack</title>
-	</head>
-    <style></style>
-	<body>
-		<div id="MAIN">
-			<NavBar />
-			<div class="titleBlock">
-				<h1>Modpack</h1>
-			</div>
-			<p id="tagline">Download recommended mods!</p>
-			<p>There is a collection of recommended mods for use on the Team SMP server, available on Modrinth as <a href="https://modrinth.com/modpack/teamsmp-modpack" target="_blank" rel="noopener noreferrer">Team SMP Recommended Mods</a> (it is unlisted: you won't see it in search results).</p>
-            <section id="installation">
-                <h2>Installation</h2>
-                <p>The simplest way to install the modpack is through the Modrinth App. Simply click the button below, then open the link if your browser asks.</p>
-                    <p style="margin: 1.8rem 0.8rem;">
-                        <a href="modrinth://modpack/teamsmp-modpack" class="button" aria-role="button">Download</a>
-                    </p>
-                <p>Of course, this won't work unless you have the Modrinth App installed. <a href="https://modrinth.com/app" target="_blank" rel="noopener noreferrer">Install it from the website.</a></p>
-            </section>
-		</div>
-	</body>
-</html>
+<Main title="Modpack">
+	<div class="titleBlock">
+		<h1>Modpack</h1>
+	</div>
+	<p id="tagline">Download recommended mods!</p>
+	<p>There is a collection of recommended mods for use on the Team SMP server, available on Modrinth as <a href="https://modrinth.com/modpack/teamsmp-modpack" target="_blank" rel="noopener noreferrer">Team SMP Recommended Mods</a> (it is unlisted: you won't see it in search results).</p>
+    <section id="installation">
+        <h2>Installation</h2>
+        <p>The simplest way to install the modpack is through the Modrinth App. Simply click the button below, then open the link if your browser asks.</p>
+            <p style="margin: 1.8rem 0.8rem;">
+                <a href="modrinth://modpack/teamsmp-modpack" class="button" aria-role="button">Download with Modrinth App</a>
+            </p>
+        <p>Of course, this won't work unless you have the Modrinth App installed. <a href="https://modrinth.com/app" target="_blank" rel="noopener noreferrer">Install it from the website</a>. If it doesn't work, try clicking again with the app open.</p>
+    </section>
+</Main>

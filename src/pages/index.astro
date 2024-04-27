@@ -1,30 +1,16 @@
 ---
-import NavBar from "../components/NavBar.astro";
+import Main from "../layouts/Main.astro";
 // import ServerStatus from "../components/temp.vue"
-import '../styles/general.styl'
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<link href="https://fonts.googleapis.com/css?family=Inter:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-		<title>Team SMP &bull; Home</title>
-	</head>
-	<body>
-		<div id="MAIN">
-			<NavBar />
-			<div class="titleBlock">
-				<h1>Team SMP</h1>
-			</div>
-			<p id="tagline">Unite, Survive, Thrive!</p>
-			<p>The Team SMP is a survival Minecraft server run by XxDreamXxXx and JunglTemple.</p>
-			<!--TODO add server status thing-->
-			<!--// <div class="status" id="status">
-				// <ServerStatus client:load />
-			// </div>-->
-		</div>
-	</body>
-</html>
+<Main title="Home">
+	<div class="titleBlock">
+		<h1>Team SMP</h1>
+	</div>
+	<p id="tagline">Unite, Survive, Thrive!</p>
+	<p>The Team SMP is a survival Minecraft server run by XxDreamXxXx and JunglTemple.</p>
+	<!--TODO add server status thing-->
+	<!--// <div class="status" id="status">
+		// <ServerStatus client:load />
+	// </div>-->
+</Main>
