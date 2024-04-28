@@ -12,7 +12,7 @@ When first opening the workspace, a notification will appear in VS Code asking y
 
 We are using [pnpm](https://pnpm.io) for package management, as it is fast and space-efficient. This, of course, requires you to have both [Node.js](https://nodejs.org) and [pnpm](https://pnpm.io) installed - if you don't, none of this will work. [Download Node](https://nodejs.org/en/download) and [pnpm](https://pnpm.io/installation).
 
-When making any changes to the new website, ensure to use the [pre Git branch](https://github.com/Team-SMP/teamsmp-web-again/tree/pre) and [open a Pull Request](https://github.com/Team-SMP/teamsmp-web-again/compare/main...pre) between the two branches. This is done to ensure that the production deployment doesn't become incomplete and/or buggy.
+When making any changes to the new website, ensure to use the [pre Git branch](https://github.com/Team-SMP/teamsmp-web-again/tree/pre) and [open a Pull Request](https://github.com/Team-SMP/teamsmp-web-again/compare/pre?expand=1) between the two branches. This is done to ensure that the production deployment doesn't become incomplete and/or buggy.
 
 For code consistency, we recommend formatting the files with [Prettier](https://prettier.io/) using the VS Code task or `pnpm prettier . --write`.
 
