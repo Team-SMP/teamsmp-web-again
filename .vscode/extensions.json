@@ -1,4 +1,10 @@
 {
-	"recommendations": ["astro-build.astro-vscode"],
+	"recommendations": [
+		"astro-build.astro-vscode",
+		"tion.evenbettercomments",
+		"eamodio.gitlens",
+		"christian-kohler.path-intellisense",
+		"sysoev.language-stylus"
+	],
 	"unwantedRecommendations": []
 }

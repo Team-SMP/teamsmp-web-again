@@ -3,3 +3,4 @@ package.json
 pnpm-lock.yaml
 .vscode/*
 .prettierrc.*
+teamsmp-web-again.code-workspace

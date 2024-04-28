@@ -1,47 +1,29 @@
-# Astro Starter Kit: Minimal
+# Team SMP Website _(again)_
 
-```sh
-npm create astro@latest -- --template minimal
-```
+This is the [new version of the Team SMP Website](https://teamsmp-new.vercel.app), completely rebuilt from the ground up using [Astro](https://astro.build).
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+## Useful for Collaborators
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+All commands are run from the root of the project, from a terminal, for example, using the VS Code integrated terminal, when opened from the workspace file. Some commonly used commands are listed in [the table below](#commands).
 
-## 🚀 Project Structure
+Some commands are also available as VS Code tasks, executable by opening the command pallete (`CTRL+SHIFT+P`) and searching for "`run task`". Find the one named "`Tasks: Run Tast`" and press `ENTER`. Then, choose a task from the list, and it will run.
 
-Inside of your Astro project, you'll see the following folders and files:
+When first opening the workspace, a notification will appear in VS Code asking you to download recommended extensions, adding [Astro language support](https://marketplace.visualstudio.com/items?itemName=astro-build.astro-vscode), [comment categorisation](https://marketplace.visualstudio.com/items?itemName=Tion.evenbettercomments) and [enhanced Git control](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) to name a few. We recommend that you download theese extensions when asked, as they will help massively with coding for the website.
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+We are using [pnpm](https://pnpm.io) for package management, as it is fast and space-efficient. This, of course, requires you to have both [Node.js](https://nodejs.org) and [pnpm](https://pnpm.io) installed - if you don't, none of this will work. [Download Node](https://nodejs.org/en/download) and [pnpm](https://pnpm.io/installation).
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+When making any changes to the new website, ensure to use the [pre Git branch](https://github.com/Team-SMP/teamsmp-web-again/tree/pre) and [open a Pull Request](https://github.com/Team-SMP/teamsmp-web-again/compare/main...pre) between the two branches. This is done to ensure that the production deployment doesn't become incomplete and/or buggy.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+For code consistency, we recommend formatting the files with [Prettier](https://prettier.io/) using the VS Code task or `pnpm prettier . --write`.
 
-Any static assets, like images, can be placed in the `public/` directory.
+### Commands
 
-## 🧞 Commands
+| Command                    | Action                                                           |
+| :------------------------- | :--------------------------------------------------------------- |
+| `pnpm i`                   | Installs dependencies                                            |
+| `pnpm run dev`             | Starts a dev server at `localhost:4321` (VS Code task available) |
+| `pnpm run astro ...`       | Run CLI commands like `astro add`, `astro check`                 |
+| `pnpm run astro -- --help` | Get help using the Astro CLI                                     |
+| `pnpm prettier . --write`  | Format with Prettier (VS Code task available)                    |
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+If you need any help with Astro, check out [their documentation](https://docs.astro.build).
