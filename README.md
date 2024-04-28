@@ -6,7 +6,7 @@ This is the [new version of the Team SMP Website](https://teamsmp-new.vercel.app
 
 All commands are run from the root of the project, from a terminal, for example, using the VS Code integrated terminal, when opened from the workspace file. Some commonly used commands are listed in [the table below](#commands).
 
-Some commands are also available as VS Code tasks, executable by opening the command pallete (`CTRL+SHIFT+P`) and searching for "`run task`". Find the one named "`Tasks: Run Tast`" and press `ENTER`. Then, choose a task from the list, and it will run.
+Some commands are also available as VS Code tasks, executable by opening the command pallete (`CTRL+SHIFT+P`) and searching for "`run task`". Find the one named "`Tasks: Run Task`" and press `ENTER`. Then, choose a task from the list, and it will run.
 
 When first opening the workspace, a notification will appear in VS Code asking you to download recommended extensions, adding [Astro language support](https://marketplace.visualstudio.com/items?itemName=astro-build.astro-vscode), [comment categorisation](https://marketplace.visualstudio.com/items?itemName=Tion.evenbettercomments) and [enhanced Git control](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) to name a few. We recommend that you download theese extensions when asked, as they will help massively with coding for the website.
 
