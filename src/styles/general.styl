@@ -1,5 +1,9 @@
+color-bg = #000c0a
+color-cta = #26bf2b
+color-cta-hover = #1e9e23
+
 body
-	background #000c0a
+	background color-bg
 	color #fff
 	font-family Inter, Ubuntu, Arial, sans-serif
 	overflow-x hidden
@@ -28,12 +32,13 @@ p
 	padding-top 6rem
 
 	h1
-		font-weight black
-		line-height 0
+		font-weight bolder
+		line-height 0.9
 
 p#tagline
+	margin-top -4.5rem
 	font-size 2rem
-	line-height 0
+	line-height 1
 	text-align center
 	margin-bottom 8rem
 
@@ -41,7 +46,7 @@ p#tagline
 	position: absolute;
 	z-index: -1;
 	content: "";
-	top: 0%;
+	top: -10%;
 	bottom: 10%;
 	width: 150%;
 	left: -25%;
@@ -51,16 +56,25 @@ p#tagline
 
 .button
 	padding 0.7rem
-	background #26bf2b
+	background color-cta
 	text-decoration none
 	color #fff !important
 	border-radius 0.8rem
 	transition background 150ms ease-out 80ms
 	&:hover
-		background #1e9e23
+		background color-cta-hover
 
 a
-	color #26bf2b
+	color color-cta
 	transition color 150ms ease-out 80ms
 	&:hover
-		color #1e9e23
+		color color-cta-hover
+
+// responsive design for smaller screens.
+@media screen and (max-width: 768px)
+	#MAIN
+		margin 1rem 1.8rem 0px 1.8rem
+	
+	.titleBlock
+		h1
+			font-size 7rem
