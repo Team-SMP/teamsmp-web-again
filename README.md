@@ -1,6 +1,6 @@
 # Team SMP Website _(again)_
 
-![Built with Astro badge](https://github.com/Team-SMP/teamsmp-web-again/blob/dffabe3cdd15cfaefd1fad6168dbba161be936ea/public/astro_cozy_vector_badge.svg)
+[![Built with Astro badge](https://github.com/Team-SMP/teamsmp-web-again/blob/dffabe3cdd15cfaefd1fad6168dbba161be936ea/public/astro_cozy_vector_badge.svg)](https://astro.build)
 
 This is the [new version of the Team SMP Website](https://teamsmp-new.vercel.app), completely rebuilt from the ground up using [Astro](https://astro.build).
 
