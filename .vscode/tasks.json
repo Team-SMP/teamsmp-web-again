@@ -5,7 +5,7 @@
             "label": "Start Astro dev-server",
             "command": "pnpm",
             "args": [
-                "run dev"
+                "dev"
             ],
             "problemMatcher": []
         },
@@ -13,7 +13,7 @@
             "label": "Format with Prettier",
             "command": "pnpm",
             "args": [
-                "exec prettier . --write"
+                "prettier . --write"
             ],
             "problemMatcher": []
         }

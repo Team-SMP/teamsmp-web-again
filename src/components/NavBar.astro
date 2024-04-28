@@ -2,24 +2,32 @@
 
 ---
 
-<nav>
-	<a href="/">Home</a>
-	<a href="/modpack">Modpack</a>
-</nav>
+<div class="hNnavWrapper">
+	<nav id="hnav">
+		<a href="/">Home</a>
+		<a href="/modpack">Modpack</a>
+	</nav>
+</div>
 
 <style lang="styl">
-	nav
+	nav#hnav
 		display flex
 		flex-direction row
 		justify-content center
-		margin-top 2rem
 		font-size 1.25rem
 		background 000c0a
-		a
-			text-decoration none
-			color #fff
-			transition color 150ms ease-out 80ms
-			margin 0px 0.6em 0px 0.6em
-			&:hover
-				color #26bf2b
+		width 100%
+	a
+		text-decoration none
+		color #fff
+		transition color 150ms ease-out 80ms
+		margin 0px 0.6em 0px 0.6em
+		&:hover
+			color #26bf2b
+	div.hNavWrapper
+		width 100vw
+		background #000c0a
+		padding 1.3rem 0rem
+		margin -0.5rem
+		border-bottom 1px solid #2d2f30
 </style>
